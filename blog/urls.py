@@ -21,4 +21,6 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.create_user,name = 'create'),
+    # path('show/',views.login_user,name = 'show')
+    path('login/',views.authenticate,name = 'auth')
 ]
